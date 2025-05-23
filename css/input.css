@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@theme {
+  
+  --font-Rubik: 'Rubik', sans-serif;
+  --color-main: #333;
+  --color-main-light: #555;
+  --color-main-lighter: #ddd;
+  --color-primary: #e67e22;
+  --color-primary-dark: #cf711f;
+  --color-primary-light: #fdf2e9;
+  --breakpoint-mobile: 950px;
+} 
+@layer components {
+  .circle {
+    @apply after:w-96 after:h-96 after:rounded-full after:absolute after:left-1/2 after:border-[50px] after:border-[#fdf2e9] after:top-1/2  after:-translate-1/2  after:-z-10 after:bg-[#fae5d3] ;
+  }
+
+}
