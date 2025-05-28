@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood</title>
     <link rel="stylesheet" href="css/all.min.css" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="font-Rubik">
+  <body>
     <header
       class="flex justify-between items-center px-12 font-semibold h-24 bg-primary-light shadow-md"
     >
       <a href="">
         <img
           src="imgs/omnifood-logo.png"
-          loading="lazy"
           class="h-[22px]"
-          alt=""
+          alt="Omnifood logo"
         />
       </a>
 
@@ -53,8 +53,9 @@
       </nav>
     </header>
     <main>
+      <!-- hero section -->
       <section class="bg-primary-light py-14 px-9">
-        <div class="grid-cols-2 grid gap-24">
+        <div class="mobile:grid-cols-2 grid-cols-1 grid gap-24">
           <div class="py-6">
             <h2 class="text-[52px] font-bold leading-[1.05] text-main">
               A healthy meal delivered to your door, every single day
@@ -64,42 +65,46 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="" class="mr-6 py-4 px-12 rounded-2xl bg-primary text-white"
-              >Start eating well
-            </a>
-            <a href="" class="py-4 px-12 rounded-2xl text-main-light bg-white"
-              >Learn more ↓</a
-            >
-            <div class="flex gap-5 items-center mt-20">
+            <div class="flex items-center flex-col gap-y-6 mobile:flex-row">
+              <a
+                href=""
+                class="mr-6 py-4 px-12 rounded-2xl bg-primary text-white"
+                >Start eating well
+              </a>
+              <a href="" class="py-4 px-12 rounded-2xl text-main-light bg-white"
+                >Learn more ↓</a
+              >
+            </div>
+            <div class="flex gap-5 flex-col mobile:flex-row items-center mt-20">
               <div class="flex">
                 <img
                   src="imgs/customers/customer-1.jpg"
                   class="w-12 h-12 -mr-4 object-cover rounded-full border-2 border-primary-light"
-                  alt=""
+                  alt="Customer photo"
                   loading="lazy"
                 /><img
                   src="imgs/customers/customer-2.jpg"
                   class="border-2 -mr-4 border-primary-light w-12 h-12 object-cover rounded-full"
                   loading="lazy"
-                  alt=""
+                  alt="Customer photo"
                 /><img
                   src="imgs/customers/customer-3.jpg"
                   class="border-2 -mr-4 border-primary-light w-12 h-12 object-cover rounded-full"
-                  alt=""
+                  alt="Customer photo"
                   loading="lazy"
                 /><img
                   src="imgs/customers/customer-4.jpg"
                   class="border-2 -mr-4 border-primary-light w-12 h-12 object-cover rounded-full"
-                  alt=""
+                  alt="Customer photo"
                   loading="lazy"
                 /><img
                   src="imgs/customers/customer-5.jpg"
                   class="border-2 -mr-4 border-primary-light w-12 h-12 object-cover rounded-full"
-                  alt=""
+                  alt="Customer photo"
                   loading="lazy"
                 /><img
                   src="imgs/customers/customer-6.jpg"
-                  alt=""
+                  alt="Customer photo"
                   loading="lazy"
                   class="border-2 border-primary-light w-12 h-12 object-cover rounded-full"
                 />
@@ -113,36 +118,53 @@
             </div>
           </div>
           <div>
-            <img src="imgs/hero.png" loading="lazy" class="w-full" alt="" />
+            <img
+              src="imgs/hero.png"
+              loading="lazy"
+              class="w-full"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
           </div>
         </div>
       </section>
+      <!-- feature section -->
       <section class="text-center py-24 px-9 bg-white">
         <h3 class="mb-8 text-main text-xl">As featured in</h3>
-        <div class="flex justify-between items-center px-8">
+        <div
+          class="grid grid-cols-1 place-items-center gap-10 mobile:grid-cols-5 px-8"
+        >
           <img
             src="imgs/logos/business-insider.png"
             class="grayscale-100 h-8"
-            alt=""
-          /><img
+            alt="Business Insider logo"
+          />
+
+          <img
             src="imgs/logos/forbes.png"
             class="grayscale-100 h-8"
-            alt=""
-          /><img
+            alt="Forbes logo"
+          />
+
+          <img
             src="imgs/logos/techcrunch.png"
             class="grayscale-100 h-8"
-            alt=""
-          /><img
+            alt="Techcrunch logo"
+          />
+
+          <img
             src="imgs/logos/the-new-york-times.png"
-            alt=""
+            alt="The New York Times logo"
             class="grayscale-100 h-8"
-          /><img
+          />
+
+          <img
             src="imgs/logos/usa-today.png"
             class="grayscale-100 h-8"
-            alt=""
+            alt="USA Today logo"
           />
         </div>
       </section>
+      <!-- How it works section -->
       <section class="py-24 px-13">
         <div class="my-8">
           <h4 class="text-xl text-primary-dark py-4">How it works</h4>
@@ -169,9 +191,9 @@
             >
               <img
                 src="imgs/app/app-screen-1.png"
-                class="w-1/3"
+                class="w-1/2 mobile:w-1/3"
                 loading="lazy"
-                alt=""
+                alt="iPhone app preferences selection screen"
               />
             </div>
           </div>
@@ -193,9 +215,9 @@
             >
               <img
                 src="imgs/app/app-screen-2.png"
-                class="w-1/3"
+                class="w-1/2 mobile:w-1/3"
                 loading="lazy"
-                alt=""
+                alt="iPhone app meal approval screen"
               />
             </div>
           </div>
@@ -217,14 +239,15 @@
             >
               <img
                 src="imgs/app/app-screen-3.png"
-                class="w-1/3"
+                class="w-1/2 mobile:w-1/3"
                 loading="lazy"
-                alt=""
+                alt="iPhone app delivery screen"
               />
             </div>
           </div>
         </div>
       </section>
+      <!-- meals section  -->
       <section class="py-24 px-13">
         <div class="text-center mb-12">
           <h3 class="uppercase text-primary-dark font-semibold mb-6">meals</h3>
@@ -236,7 +259,11 @@
           <div
             class="shadow-2xl hover:-translate-y-6 transition duration-500 rounded-2xl overflow-hidden"
           >
-            <img src="imgs/meals/meal-1.jpg" loading="lazy" alt="" />
+            <img
+              src="imgs/meals/meal-1.jpg"
+              loading="lazy"
+              alt="Japanese Gyozas"
+            />
             <div class="p-8">
               <span
                 class="bg-[#51cf66] font-semibold uppercase inline-block text-xs px-2 py-1 rounded-2xl text-main"
@@ -270,7 +297,11 @@
           <div
             class="shadow-2xl rounded-2xl hover:-translate-y-6 transition duration-500 overflow-hidden"
           >
-            <img src="imgs/meals/meal-2.jpg" loading="lazy" alt="" />
+            <img
+              src="imgs/meals/meal-2.jpg"
+              loading="lazy"
+              alt="Avocado Salad"
+            />
             <div class="p-8">
               <span
                 class="bg-[#94d82d] font-semibold uppercase inline-block text-xs px-2 py-1 rounded-2xl text-main"
@@ -308,7 +339,7 @@
             <h3 class="mb-8 text-2xl text-main font-bold">
               Works with any diet:
             </h3>
-            <ul class="flex flex-col gap-4 h-full">
+            <ul class="flex flex-col gap-8 h-full">
               <li class="flex items-center gap-6">
                 <i class="fa-solid fa-check text-primary text-2xl"></i>
                 <p class="text-lg font-light text-main-light">Vegetarian</p>
@@ -355,31 +386,34 @@
           See all recipes →</a
         >
       </section>
+      <!-- Testimonials section  -->
       <section class="py-24 px-13 bg-primary-light">
         <div class="grid grid-cols-1 mobile:grid-cols-2 gap-12">
           <div>
             <div class="mb-16">
               <h2 class="mb-4 text-2xl text-primary-dark">Testimonials</h2>
-              <p class="text-5xl text-main font-bold">Once you try it, you can't go back</p>
+              <p class="text-5xl text-main font-bold">
+                Once you try it, you can't go back
+              </p>
             </div>
             <div class="grid grid-cols-1 gap-8 mobile:grid-cols-2">
               <div>
                 <img
                   class="h-18 w-18 mb-6 rounded-full"
                   src="imgs/customers/dave.jpg"
-                  alt=""
+                  alt="Photo of customer Dave Bryson"
                 />
-                <p class="mb-4 text-xl text-main-light" class="mb-4 text-xl text-main-light">
+                <p class="mb-4 text-xl text-main-light">
                   Inexpensive, healthy and great-tasting meals, without even
                   having to order manually! It feels truly magical.
                 </p>
-                <span class="text-lg text-main-light" class="text-xl text-main-ligh">— Dave Bryson</span>
+                <span class="text-lg text-main-light">— Dave Bryson</span>
               </div>
               <div>
                 <img
                   class="h-18 w-18 mb-6 rounded-full"
                   src="imgs/customers/ben.jpg"
-                  alt=""
+                  alt="Photo of customer Ben Hadley"
                 />
                 <p class="mb-4 text-xl text-main-light">
                   The AI algorithm is crazy good, it chooses the right meals for
@@ -393,30 +427,28 @@
                   src="imgs/customers/steve.jpg"
                   alt=""
                 />
+
                 <p class="mb-4 text-xl text-main-light">
                   Omnifood is a life saver! I just started a company, so there's
-                  no time for cooking. I couldn't live without my daily meals
-                  now!
                 </p>
-                <span class="text-lg text-main-light">— Steve Miller</span>
+
+                <span class="text-lg text-main-light">— Steve Johnson</span>
               </div>
               <div>
                 <img
                   class="h-18 w-18 mb-6 rounded-full"
                   src="imgs/customers/hannah.jpg"
-                  alt=""
+                  alt="Photo of customer Hannah Smith"
                 />
                 <p class="mb-4 text-xl text-main-light">
                   I got Omnifood for the whole family, and it frees up so much
-                  time! Plus, everything is organic and vegan and without
-                  plastic.
                 </p>
-                <span class="text-lg text-main-light">— Hannah Smith</span>
+                <span class="text-lg text-main-light">— Steve Johnson</span>
               </div>
             </div>
           </div>
           <!-- gallery -->
-          <div class="grid   grid-cols-2 mobile:grid-cols-3 gap-8">
+          <div class="grid grid-cols-2 mobile:grid-cols-3 gap-8">
             <div class="overflow-hidden">
               <img
                 class="hover:scale-125 transition duration-500"
@@ -428,9 +460,17 @@
             <div class="overflow-hidden">
               <img
                 class="hover:scale-125 transition duration-500"
+                src="imgs/gallery/gallery-1.jpg"
+                loading="lazy"
+                alt="Photo of beautifully arranged food"
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-2.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -438,7 +478,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-3.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -446,7 +486,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-4.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -454,7 +494,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-5.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -462,7 +502,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-6.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -470,7 +510,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-7.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -478,7 +518,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-8.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -486,7 +526,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-9.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -494,7 +534,7 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-10.jpg"
                 loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
             <div class="overflow-hidden">
@@ -502,24 +542,109 @@
                 class="hover:scale-125 transition duration-500"
                 src="imgs/gallery/gallery-11.jpg"
                 loading="lazy"
-                alt=""
-              />
-            </div>
-            <div class="overflow-hidden">
-              <img
-                class="hover:scale-125 transition duration-500"
-                src="imgs/gallery/gallery-12.jpg"
-                loading="lazy"
-                alt=""
+                alt="Photo of beautifully arranged food"
               />
             </div>
           </div>
         </div>
       </section>
+      <!-- card section -->
       <section class="py-24 px-13">
-        
+        <div class="grid grid-cols-1 mobile:grid-cols-2 gap-8 ">
+          <div class="flex justify-center mobile:w-3/4 border-4 rounded-2xl border-[#fdf2e9] items-center justify-self-end flex-col">
+            <div class="text-center">
+              <h3 class="text-2xl text-primary-dark uppercase font-bold">
+                Starter
+              </h3>
+              <h2 class="text-3xl text-main">
+                $ <span class="text-6xl font-bold">399</span>
+              </h2>
+              <p class="my-6 text-main-light">
+                per month. That's just $13 per meal!
+              </p>
+            </div>
+            <ul class="my-10">
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  1 meal per day
+                </p>
+              </li>
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  Order from 11am to 9pm
+                </p>
+              </li>
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  Delivery is free
+                </p>
+              </li>
+              <li class="flex items-center gap-6">
+                <i class="fa-solid fa-xmark text-3xl text-primary"></i>
+                <p></p>
+              </li>
+            </ul>
+            <div class="flex justify-center">
+              <a
+                href=""
+                class="bg-primary py-4 px-6 text-xl rounded-2xl hover:bg-primary-dark transition duration-500 text-white"
+                >Start eating well</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-primary-light overflow-hidden mobile:w-3/4 rounded-2xl py-12 px-10 relative best-seller"
+          >
+            <div class="text-center">
+              <h3 class="text-2xl text-primary-dark uppercase font-bold">
+                Complete
+              </h3>
+              <h2 class="text-3xl text-main">
+                $<span class="text-6xl font-bold">649</span>
+              </h2>
+              <p class="my-6 text-main-light">
+                per month. That's just $11 per meal!
+              </p>
+            </div>
+            <ul class="my-10">
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  <span class="font-bold">2</span> meals per day
+                </p>
+              </li>
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  Order <span class="font-bold">24/7</span>
+                </p>
+              </li>
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  Delivery is free
+                </p>
+              </li>
+              <li class="flex mb-4 items-center gap-6">
+                <i class="fa-solid fa-check text-3xl text-primary"></i>
+                <p class="text-lg text-main-light font-medium">
+                  Get access to latest recipes
+                </p>
+              </li>
+            </ul>
+            <div class="flex justify-center">
+              <a
+                href=""
+                class="bg-primary py-4 px-6 text-xl rounded-2xl hover:bg-primary-dark transition duration-500 text-white"
+                >Start eating well</a
+              >
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>

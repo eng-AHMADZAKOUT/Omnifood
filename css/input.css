@@ -1,8 +1,8 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 @theme {
-  
+
   --font-Rubik: 'Rubik', sans-serif;
   --color-main: #333;
   --color-main-light: #555;
@@ -10,11 +10,23 @@
   --color-primary: #e67e22;
   --color-primary-dark: #cf711f;
   --color-primary-light: #fdf2e9;
+  --color-third: #45260a;
   --breakpoint-mobile: 950px;
-} 
+}
+
 @layer components {
   .circle {
-    @apply after:w-96 after:h-96 after:rounded-full after:absolute after:left-1/2 after:border-[50px] after:border-[#fdf2e9] after:top-1/2  after:-translate-1/2  after:-z-10 after:bg-[#fae5d3] ;
+    @apply after:w-96 after:h-96 after:rounded-full after:absolute after:left-1/2 after:border-[50px] after:border-[#fdf2e9] after:top-1/2 after:-translate-1/2 after:-z-10 after:bg-[#fae5d3];
   }
 
+  .best-seller {
+    @apply after:absolute after:bg-amber-300  after:py-2 after:px-24 after:top-14 after:-right-15 after:z-10 after:content-['best\value'] after:uppercase after:text-main after:font-bold after:rotate-45 after:shadow-lg;
+  }
+}
+
+@layer base {
+  body {
+    font-family: "Rubik", sans-serif;
+
+  }
 }
